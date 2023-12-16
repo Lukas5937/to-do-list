@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+        <div class="main">
+            <div class="home">
+                <button class="new-to-do-button">Add new To do</button>
+                <div class="to-do-list-wrapper"></div>
+                <div class="new-to-do-wrapper">
+                    <dialog id="to-do-dialog">
+                        <form method="dialog">
+                            <div class="title-wrapper to-do">
+                                <label for="title">Title</label>
+                                <input type="text" id="title" name="title">
+                            </div>
+                            <div class="description-wrapper">
+                                <label for="description">Description</label>
+                                <input type="description" id="description" name="description">
+                            </div>
+                            <div class="priority-wrapper">
+                                <div>
+                                    <input type="radio" id="low" name="priority" value="low">
+                                    <label for="low">low</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="medium" name="priority" value="medium">
+                                    <label for="medium">medium</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="high" name="priority" value="high">
+                                    <label for="high">high</label>
+                                </div>
+                            </div>
+                            <div class="dueDate-wrapper">
+                                <label for="dueDate">Due date</label>
+                                <input type="date" id="dueDate" name="dueDate">
+                            </div>
+                            <div class="notes-wrapper">
+                                <label for="notes">Notes</label>
+                                <textarea rows="10" cols="20" id="notes">Add some notes</textarea>
+                            </div>
+                            <button type="button" id="create-to-do-button">Create to do</button>
+                        </form>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <button class="new-project-button">Add new project</button>
+            <div class="project-list-wrapper"></div>
+            <div class="new-project-wrapper">
+                <dialog id="project-dialog">
+                    <form method="dialog">
+                        <div class="title-wrapper project">
+                            <label for="project-title">Title</label>
+                            <input type="text" id="project-title" name="project-title">
+                        </div>
+                        <div class="description-wrapper project">
+                            <label for="project-description">Description</label>
+                            <input type="project-description" id="project-description" name="project-description">
+                        </div>
+                        <button type="button" id="create-project-button">Create project</button>
+                    </form>
+                </dialog>
+            </div>
+        </div>
+</body>
+</html>
